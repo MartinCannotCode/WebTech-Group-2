@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!--Source codes-->
+  <!--https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
+
+  <!--Notes-->
+  <!--  1. Wala pa tayong registration form.
+        2. Kinda responsive na ren ito.
+        3. HTML palang ito (pangit kase mag code sa netbeans)
+        4. Ililipat pa sa JSP file.
+        5. by cdn links lang ang bootstrap dito.
+        
+  -->
+
+<header>
+
+  <!-- para sa navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Group 2</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-info"><a class="nav-link active fw-bolder" aria-current="page" href="#">Home</a></button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-info"disabled><a class="nav-link active fw-bolder" aria-current="page" href="#">Products</a></button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-info"disabled><a class="nav-link active fw-bolder" aria-current="page" href="#">Pricing</a></button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-info"disabled><a class="nav-link active fw-bolder" aria-current="page" href="#">Others</a></button>
+          </li>
+        </ul>
+        <!-- Sa ngayon wala pa tayong webpage para sa registration form-->
+        <span class="navbar-text">
+          <button type="button" class="btn btn-outline-success">Register now!</button>
+        </span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- Carousel slides -->
+<section class="sec1">
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner mb-5">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="img/shoe3.jpg" class="img rounded mx-auto d-block" alt="...">
+      <div class="carousel-caption">
+        <button type="button" class="btn btn-primary position-relative">
+          SHOE 1 -- ₱ 2,500.00
+          <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+            <span class="visually-hidden">New alerts</span>
+          </span>
+        </button>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-primary" onclick="alert('Register First to Continue... Thanks')">Add to cart!</button>
+          <button type="button" class="btn btn-primary" onclick="alert('Register First to Continue... Thanks')">Buy Now!</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="img/shoe2.jpg" class="img rounded mx-auto d-block" alt="...">
+      <div class="carousel-caption">
+        <button type="button" class="btn btn-primary position-relative">
+          SHOE 1 -- ₱ 2,500.00
+          <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+            <span class="visually-hidden">New alerts</span>
+          </span>
+        </button>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-primary" onclick="alert('Register First to Continue... Thanks')">Add to cart!</button>
+          <button type="button" class="btn btn-primary" onclick="alert('Register First to Continue... Thanks')">Buy Now!</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/shoe1.jpg" class="img rounded mx-auto d-block" alt="...">
+      <div class="carousel-caption">
+        <button type="button" class="btn btn-primary position-relative">
+          SHOE 1 -- ₱ 2,500.00
+          <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+            <span class="visually-hidden">New alerts</span>
+          </span>
+        </button>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-primary" onclick="alert('Register First to Continue... Thanks')">Add to cart!</button>
+          <button type="button" class="btn btn-primary" onclick="alert('Register First to Continue... Thanks')">Buy Now!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>  
+
+<!-- wala ako maisip na content dito kaya eto nalang -->
+<section class="sec2">
+  <div class="text-center my-3">
+    <!-- Sa ngayon wala pa tayong webpage para sa registration form-->
+    <button type="button" class="btn btn-secondary btn-lg">Log in Now</button>
+    <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+  </div>
+  <div class="border bg-info text-center fs-2">
+    We have any types of brands!
+  </div>
+  <!--List of brands para sa future, pag cinlick to, ididirect ka sa panibagong webpage-->
+  <div class="btn-group container-fluid my-5" role="group" aria-label="Basic mixed styles example">
+    <button type="button" class="btn btn-danger btn-lg"><a class="shoelink text-decoration-none text-light" href="#shoebrand1">Shoe Brand 1</a></button>
+    <button type="button" class="btn btn-warning btn-lg"><a class="shoelink text-decoration-none text-light" href="#shoebrand2">Shoe Brand 2</a></button>
+    <button type="button" class="btn btn-success btn-lg"><a class="shoelink text-decoration-none text-light" href="#shoebrand3">Shoe Brand 3</a></button>
+    <button type="button" class="btn btn-primary btn-lg"><a class="shoelink text-decoration-none text-light" href="#shoebrand4">Shoe Brand 4</a></button>
+    <button type="button" class="btn btn-dark btn-lg"><a class="shoelink text-decoration-none text-light d-none d-md-block" href="#shoebrand5">Shoe Brand 5</a></button>
+  </div>
+
+
+  <!-- cards para sa sample products naten-->
+  <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 my-3">
+    <div class="col mb-3">
+      <div class="card h-100 card border-warning mb-3">
+        <img src="img/shoe4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sneaker 1</h5>
+          <p class="card-text">A high-quality sneaker is made from durable materials that can withstand wear and tear, with a breathable upper and a non-slip sole for traction and stability.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">₱ 3,000.00 <pre>SRP</pre></li>
+            <li class="list-group-item fw-bold">₱ 2,500.00 <kbd>At Discounted Price Now</kbd></li>
+          </ul>
+          <button type="button" class="btn btn-outline-warning" onclick="alert('Register First to Continue... Thanks')">Add to Cart</button>
+          <button type="button" class="btn btn-warning" onclick="alert('Register First to Continue... Thanks')">Buy now!</button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">AVAILABLE AT ALL SIZES</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-3">
+      <div class="card h-100 card border-warning mb-3">
+        <img src="img/shoe5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sneaker 2</h5>
+          <p class="card-text">A good pair of sneakers should be comfortable and supportive, with a cushioned sole and a snug fit to protect your feet during physical activity.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">₱ 3,000.00 <pre>SRP</pre></li>
+            <li class="list-group-item fw-bold">₱ 2,500.00 <kbd>At Discounted Price Now</kbd></li>
+          </ul>
+          <button type="button" class="btn btn-outline-warning" onclick="alert('Register First to Continue... Thanks')">Add to Cart</button>
+          <button type="button" class="btn btn-warning" onclick="alert('Register First to Continue... Thanks')">Buy now!</button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">AVAILABLE AT ALL SIZES</small>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-3">
+      <div class="card h-100 card border-warning mb-3">
+        <img src="img/shoe6.jpg" class="card-img-top" alt="..." style="height: 220px;">
+        <div class="card-body">
+          <h5 class="card-title">Sneaker 3</h5>
+          <p class="card-text">The ideal sneaker strikes a balance between style and function, with a versatile design that can be worn for both athletic and casual occasions.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">₱ 3,000.00 <pre>SRP</pre></li>
+            <li class="list-group-item fw-bold">₱ 2,500.00 <kbd>At Discounted Price Now</kbd></li>
+          </ul>
+          <button type="button" class="btn btn-outline-warning" onclick="alert('Register First to Continue... Thanks')">Add to Cart</button>
+          <button type="button" class="btn btn-warning" onclick="alert('Register First to Continue... Thanks')">Buy now!</button>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">AVAILABLE AT ALL SIZES</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <div class="my-5 text-center text-light fw-bolder">
+    <h2>Group 2 Store</h2>
+    <h4>Copyright © 2023</h4>
+    <h4>All Rights Reserved.</h4>
+  </div>
+  <div>
+    <p class="text-end text-light-70">PARMA</p>
+  </div>
+</footer>
+
+    
+</body>
+</html>
