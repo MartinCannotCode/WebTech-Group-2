@@ -1,23 +1,39 @@
+
 body {
-    background-color: #023246;
+    background-color: #f7f3f3;
 }
 
 header {
-    background-color: #f6f6f6;
+    background-color: #f7f3f3;
+
+}
+
+footer {
+    background-color: #800000;
+}
+
+.logo {
+    justify-content: space-between;
 }
 
 .carouselExampleDark {
     position: relative;
+} 
+
+#arrow {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
+#arrow.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
 .img{
     width: 700px;
     height: 500px;
 }
 
-.sec2{
-    background-color: aliceblue;
-}
 
 @media (max-width: 414px) {
     .img{
