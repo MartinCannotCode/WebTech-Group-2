@@ -44,6 +44,44 @@
 
         </div>
         
+        
+<script>
+function validateForm() {
+  var productID = document.getElementById("productID").value;
+  var productName = document.getElementById("productName").value;
+  var size = document.getElementById("size").value;
+  var qty = document.getElementById("qty").value;
+  
+  // Validate product ID
+  if (isNaN(productID) || productID <= 0) {
+    alert("Invalid input: Product ID must be a number only and greater than 0");
+    return false;
+  }
+  
+  // Validate product name
+  if (!/^[a-zA-Z]+$/.test(productName)) {
+    alert("Invalid input: Product Name must contain only letters");
+    return false;
+  }
+  
+  // Validate size
+  if (!/^[a-zA-Z0-9]+$/.test(size)) {
+    alert("Invalid input: Size must be alphanumeric");
+    return false;
+  }
+  
+  // Validate quantity
+  if (isNaN(qty) || qty <= 0) {
+    alert("Invalid input: Quantity must be a number greater than 0");
+    return false;
+  }
+  
+  // Redirect to homepage
+  window.location.href = "${pageContext.request.contextPath}/index.jsp";
+}
+</script>
+        
+        
         <%@include file="/nav/footer.jsp" %>
 
 
