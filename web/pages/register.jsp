@@ -9,19 +9,20 @@
 
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
-        <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.6.4.min.js"></script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer="defer"></script>
+        <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+
+
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js" integrity="sha512-igl8WEUuas9k5dtnhKqyyld6TzzRjvMqLC79jkgT3z02FvJyHAuUtyemm/P/jYSne1xwFI06ezQxEwweaiV7VA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer=""defer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.4/dayjs.min.js" integrity="sha512-Ot7ArUEhJDU0cwoBNNnWe487kjL5wAOsIYig8llY/l0P2TUFwgsAHVmrZMHsT8NGo+HwkjTJsNErS6QqIkBxDw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer=""defer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer" defer="defer"></script>
         <script src="${pageContext.request.contextPath}/js/datepicker-bs4.js?" defer="defer"></script>
 
 
 
-
         <%@include file="/LINK/incld.jsp" %>
+
 
 
     </head>
@@ -50,7 +51,7 @@
                             <input type="text" name="address" id="address" placeholder="address" required/>
                             <input placeholder="birthday" class="form-control" type="text" autocomplete="off" id="birthday" name="birthday" required/>
                             <input type="text" name="mobileNumber" id="mobileNumber" placeholder="mobile number" required/>
-                            <button>SUBMIT</button>
+                            <button type="submit">SUBMIT</button>
 
                         </form>
 
@@ -79,11 +80,12 @@
                                 } else if (!regex.test(address)) {
                                     alert("The address must contain alphanumeric characters");
                                     return false;
-                                } else if (mobileNumber.length != 11 || isNaN(mobileNumber)) {
+                                } else if (mobileNumber.length !== 11 || isNaN(mobileNumber)) {
                                     alert('The mobile number must contain 11 numeric digits');
                                     return false;
                                 } else {
                                     alert("Success");
+                                    console.log("Redirecting to home page...");
                                     return true;
                                 }
                             }
@@ -109,23 +111,7 @@
 
 
 
-        <!--Draggable-->
-        <script>
-            $(function () {
-                $("#carouselExampleFade .carousel-inner").draggable({
-                    axis: "x",
-                    containment: "#carouselExampleFade",
-                    cursor: "grab",
-                    stop: function () {
-                        if ($(this).position().left > 0) {
-                            $("#carouselExampleFade").carousel("prev");
-                        } else {
-                            $("#carouselExampleFade").carousel("next");
-                        }
-                    }
-                });
-            });
-        </script>
+
 
         <!--Navbar Animation-->
         <script>
@@ -143,7 +129,7 @@
                 } else {
                     $('nav').removeClass('white');
                 }
-            })
+            });
         </script>
 
         <!--Carousel Content Animation-->
@@ -161,25 +147,6 @@
             });
         </script>
 
-        <script>
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 4
-                    }
-                }
-            }
-            )
-        </script>
 
     </body>
 </html>
