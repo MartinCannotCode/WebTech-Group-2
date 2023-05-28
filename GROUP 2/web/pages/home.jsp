@@ -327,14 +327,13 @@
                 </div>
             </section>
         </div>
-
-        <%@include file="/nav/footer.jsp" %>
-
-
-
-
     </div>
 
+    <div class="d-flex justify-content-center">
+        <iframe width="1000" height="510" src="https://www.youtube.com/embed/H22LVTwf-kM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <%@include file="/nav/footer.jsp" %>
 
 
 
